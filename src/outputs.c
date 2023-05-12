@@ -661,7 +661,7 @@ struct wd_state *wd_state_create(void) {
   struct wd_state *state = calloc(1, sizeof(*state));
   state->zoom = 1.;
   state->capture = true;
-  state->show_overlay = true;
+  state->show_overlay = false;
   wl_list_init(&state->heads);
   wl_list_init(&state->outputs);
   wl_list_init(&state->render.heads);
